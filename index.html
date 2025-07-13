@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimitris Magos | Data Scientist Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-title {
+            @apply text-3xl font-bold text-gray-800 border-b-4 border-blue-600 pb-2 mb-8 inline-block;
+        }
+        .nav-link {
+            @apply text-gray-600 hover:text-blue-600 transition duration-300 font-medium;
+        }
+        .card {
+            @apply bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-700" x-data="{ openMenu: false }">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-xl font-bold text-gray-800">Dimitris Magos</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <button @click="openMenu = !openMenu" class="md:hidden text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div x-show="openMenu" @click.away="openMenu = false" class="md:hidden bg-white border-t" x-transition>
+            <a href="#about" class="block text-center py-3 px-6 nav-link">About</a>
+            <a href="#skills" class="block text-center py-3 px-6 nav-link border-t">Skills</a>
+            <a href="#experience" class="block text-center py-3 px-6 nav-link border-t">Experience</a>
+            <a href="#education" class="block text-center py-3 px-6 nav-link border-t">Education</a>
+            <a href="#contact" class="block text-center py-3 px-6 nav-link border-t">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center bg-gray-100 pt-20">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-5xl md:text-7xl font-black text-gray-800 mb-4">Dimitris Magos</h1>
+                <p class="text-2xl md:text-3xl text-blue-600 font-semibold mb-8">Aspiring Data Scientist</p>
+                <p class="max-w-3xl mx-auto text-lg text-gray-600 mb-12">
+                    Transitioning from Production Engineering to Data Science, I merge a meticulous engineering mindset with a passion for uncovering stories within data.
+                </p>
+                <a href="#contact" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300 text-lg transform hover:scale-105">Get In Touch</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center">
+                    <h2 class="section-title">About Me</h2>
+                </div>
+                <div class="max-w-4xl mx-auto mt-4 text-center text-lg leading-relaxed">
+                    <p>
+                        A passionate and analytical professional transitioning from a successful career in Production Engineering for MicroElectroMechanical Systems (MEMS) to the dynamic field of Data Science. My background in electronics has instilled a deep curiosity and a methodical approach to problem-solving. I am adept at leveraging Python, SQL, and machine learning to extract meaningful insights from complex datasets. I am eager to apply my technical skills and collaborative spirit to a data-driven role where I can contribute to impactful projects.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center">
+                     <h2 class="section-title">My Skills</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4">
+                    <div class="card p-8 text-center">
+                        <h3 class="text-xl font-bold mb-4">Technical Skills</h3>
+                        <p>Python, SQL, C, AWS Lightsail, MS Power BI, Tableau, MS SharePoint, HeidiSQL, pgAdmin, PuTTY, Atlassian Jira</p>
+                    </div>
+                    <div class="card p-8 text-center">
+                        <h3 class="text-xl font-bold mb-4">Engineering & Production</h3>
+                        <p>Lean Manufacturing, Product Development, Sensitive Material Handling, Autodesk AutoCAD, Google Sketchup, Embedded Software (8051)</p>
+                    </div>
+                    <div class="card p-8 text-center">
+                        <h3 class="text-xl font-bold mb-4">Professional Skills</h3>
+                        <p>Problem Solving, Complaint Resolution, Teamwork, Communication, Organization, Attention to Detail</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center">
+                    <h2 class="section-title">Work Experience</h2>
+                </div>
+                <div class="relative max-w-4xl mx-auto mt-12">
+                    <!-- Timeline line -->
+                    <div class="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-gray-200"></div>
+                    <!-- Timeline items -->
+                    <div class="space-y-12">
+                        <!-- IQVIA Analyst -->
+                        <div class="relative">
+                            <div class="md:flex items-center">
+                                <div class="md:w-1/2 text-center md:text-right md:pr-8">
+                                    <h3 class="text-xl font-bold">IT Managed Services Analyst</h3>
+                                    <p class="text-blue-600">IQVIA</p>
+                                    <p class="text-sm text-gray-500">Mar 2025 - Present</p>
+                                </div>
+                                <div class="md:w-1/2 md:pl-8 mt-4 md:mt-0">
+                                    <div class="bg-gray-100 p-6 rounded-lg shadow-sm">
+                                        <ul class="list-disc list-inside space-y-1">
+                                            <li>Automate e-signature integration into a custom CRM.</li>
+                                            <li>Execute server migrations to AWS Lightsail.</li>
+                                            <li>Perform server maintenance and ERP support.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-blue-600 border-4 border-white"></div>
+                        </div>
+                        <!-- IQVIA Intern -->
+                        <div class="relative">
+                             <div class="md:flex flex-row-reverse items-center">
+                                <div class="md:w-1/2 text-center md:text-left md:pl-8">
+                                    <h3 class="text-xl font-bold">IT Managed Services Intern</h3>
+                                    <p class="text-blue-600">IQVIA</p>
+                                    <p class="text-sm text-gray-500">Sep 2024 - Mar 2025</p>
+                                </div>
+                                <div class="md:w-1/2 md:pr-8 mt-4 md:mt-0">
+                                    <div class="bg-gray-100 p-6 rounded-lg shadow-sm">
+                                        <ul class="list-disc list-inside space-y-1">
+                                            <li>Developed and managed MS Power BI reports.</li>
+                                            <li>Administered departmental SharePoint site.</li>
+                                            <li>Created project website and provided user support.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-blue-600 border-4 border-white"></div>
+                        </div>
+                        <!-- ESS Engineer -->
+                        <div class="relative">
+                             <div class="md:flex items-center">
+                                <div class="md:w-1/2 text-center md:text-right md:pr-8">
+                                    <h3 class="text-xl font-bold">Production & Lab Engineer</h3>
+                                    <p class="text-blue-600">European Sensor Systems</p>
+                                    <p class="text-sm text-gray-500">Nov 2021 - Nov 2023</p>
+                                </div>
+                                <div class="md:w-1/2 md:pl-8 mt-4 md:mt-0">
+                                    <div class="bg-gray-100 p-6 rounded-lg shadow-sm">
+                                        <ul class="list-disc list-inside space-y-1">
+                                            <li>Managed volume production of MEMS sensors.</li>
+                                            <li>Conducted electronics assembly and troubleshooting.</li>
+                                            <li>Verified product performance and wrote reports.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-blue-600 border-4 border-white"></div>
+                        </div>
+                        <!-- Nobacco Tech Support -->
+                        <div class="relative">
+                             <div class="md:flex flex-row-reverse items-center">
+                                <div class="md:w-1/2 text-center md:text-left md:pl-8">
+                                    <h3 class="text-xl font-bold">Tech Support & Customer Care</h3>
+                                    <p class="text-blue-600">Nobacco S.A.</p>
+                                    <p class="text-sm text-gray-500">Jan 2016 - Nov 2021</p>
+                                </div>
+                                <div class="md:w-1/2 md:pr-8 mt-4 md:mt-0">
+                                    <div class="bg-gray-100 p-6 rounded-lg shadow-sm">
+                                        <ul class="list-disc list-inside space-y-1">
+                                            <li>Provided remote troubleshooting and customer care.</li>
+                                            <li>Inspected and repaired electronic devices.</li>
+                                            <li>Authored a service manual to improve repair reliability.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-blue-600 border-4 border-white"></div>
+                        </div>
+                        <!-- Electrical Engineer Assistant -->
+                        <div class="relative">
+                            <div class="md:flex items-center">
+                               <div class="md:w-1/2 text-center md:text-right md:pr-8">
+                                   <h3 class="text-xl font-bold">Electrical Engineer Assistant</h3>
+                                   <p class="text-sm text-gray-500">Feb 2014 - Dec 2015</p>
+                               </div>
+                               <div class="md:w-1/2 md:pl-8 mt-4 md:mt-0">
+                                   <div class="bg-gray-100 p-6 rounded-lg shadow-sm">
+                                       <ul class="list-disc list-inside space-y-1">
+                                           <li>Inspected and repaired medical and aesthetic equipment.</li>
+                                           <li>Analyzed equipment problems for beauty salons.</li>
+                                       </ul>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-blue-600 border-4 border-white"></div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & More Section -->
+        <section id="education" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center">
+                    <h2 class="section-title">Education & More</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4">
+                    <!-- Education Card -->
+                    <div class="card p-8">
+                        <h3 class="text-xl font-bold mb-4">Education</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-semibold">Automation Engineer (Thesis Pending)</h4>
+                                <p class="text-sm text-gray-600">University of West Attica (UniWA)</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">High School Diploma</h4>
+                                <p class="text-sm text-gray-600">1st High School of Gerakas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Certifications Card -->
+                    <div class="card p-8">
+                        <h3 class="text-xl font-bold mb-4">Certifications</h3>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>DataCamp: Associate Data Engineer in SQL</li>
+                            <li>DataCamp: Data Engineer in Python</li>
+                            <li>UCERT: Project Management and Administration</li>
+                            <li>Dynagie: Managing Time and Energy</li>
+                        </ul>
+                    </div>
+                    <!-- Volunteering Card -->
+                    <div class="card p-8">
+                        <h3 class="text-xl font-bold mb-4">Volunteering & Languages</h3>
+                        <div>
+                            <h4 class="font-semibold">STEM Teacher</h4>
+                            <p class="text-sm text-gray-600 mb-4">Ambersand Robotics (Dec 2021 - Present)</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Languages</h4>
+                            <p class="text-sm text-gray-600">English (Fluent), French (Basic)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="max-w-2xl mx-auto mt-4 mb-12">I'm currently open to new opportunities. Feel free to reach out!</p>
+                </div>
+                <div class="max-w-2xl mx-auto">
+                    <form action="#" method="POST" class="space-y-6">
+                        <div>
+                            <label for="name" class="sr-only">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Your Name" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none transition">
+                        </div>
+                        <div>
+                            <label for="email" class="sr-only">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Your Email" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none transition">
+                        </div>
+                        <div>
+                            <label for="message" class="sr-only">Message</label>
+                            <textarea name="message" id="message" rows="5" placeholder="Your Message" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none transition"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300 text-lg">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://www.linkedin.com/in/dimitris-magos" target="_blank" class="hover:text-blue-400 transition">LinkedIn</a>
+                <!-- Add other social links like GitHub here -->
+            </div>
+            <p>&copy; 2025 Dimitris Magos. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
