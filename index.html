@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -289,6 +290,7 @@
                     <p class="max-w-2xl mx-auto mt-4 mb-12">I'm currently open to new opportunities. Feel free to reach out!</p>
                 </div>
                 <div class="max-w-2xl mx-auto">
+                    <!-- IMPORTANT: Replace YOUR_UNIQUE_ID with your own Formspree form ID -->
                     <form action="https://formspree.io/f/mwpqedpo" method="POST" class="space-y-6">
                         <div>
                             <label for="name" class="sr-only">Name</label>
@@ -301,10 +303,6 @@
                         <div>
                             <label for="message" class="sr-only">Message</label>
                             <textarea name="message" id="message" rows="5" placeholder="Your Message" class="w-full p-3 rounded-lg border bg-gray-50 border-gray-300 dark:bg-gray-800 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 focus:outline-none transition" required></textarea>
-                        </div>
-                        <!-- Google reCAPTCHA -->
-                        <div class="flex justify-center">
-                            <div class="g-recaptcha" data-sitekey="6Lf99YIrAAAAAB7BT4tTLy_YdbjTvpJOcSxAoB0G"></div>
                         </div>
                         <div class="text-center">
                             <button type="submit" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition duration-300 text-lg">Send Message</button>
