@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -137,7 +137,7 @@
                             <div class="md:flex items-center">
                                 <div class="md:w-1/2 text-center md:text-right md:pr-8">
                                     <h3 class="text-xl font-bold text-gray-800 dark:text-white">IT Managed Services Analyst</h3>
-                                    <p class="text-blue-600 dark:text-blue-400">IQVIA</p>
+                                    <a href="https://www.iqvia.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">IQVIA</a>
                                     <p class="text-sm text-gray-500 dark:text-gray-400">Mar 2025 - Present</p>
                                 </div>
                                 <div class="md:w-1/2 md:pl-8 mt-4 md:mt-0">
@@ -157,7 +157,7 @@
                              <div class="md:flex flex-row-reverse items-center">
                                 <div class="md:w-1/2 text-center md:text-left md:pl-8">
                                     <h3 class="text-xl font-bold text-gray-800 dark:text-white">IT Managed Services Intern</h3>
-                                    <p class="text-blue-600 dark:text-blue-400">IQVIA</p>
+                                    <a href="https://www.iqvia.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">IQVIA</a>
                                     <p class="text-sm text-gray-500 dark:text-gray-400">Sep 2024 - Mar 2025</p>
                                 </div>
                                 <div class="md:w-1/2 md:pr-8 mt-4 md:mt-0">
@@ -177,7 +177,7 @@
                              <div class="md:flex items-center">
                                 <div class="md:w-1/2 text-center md:text-right md:pr-8">
                                     <h3 class="text-xl font-bold text-gray-800 dark:text-white">Production & Lab Engineer</h3>
-                                    <p class="text-blue-600 dark:text-blue-400">European Sensor Systems</p>
+                                    <a href="https://esenssys.com/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">European Sensor Systems</a>
                                     <p class="text-sm text-gray-500 dark:text-gray-400">Nov 2021 - Nov 2023</p>
                                 </div>
                                 <div class="md:w-1/2 md:pl-8 mt-4 md:mt-0">
@@ -197,7 +197,7 @@
                              <div class="md:flex flex-row-reverse items-center">
                                 <div class="md:w-1/2 text-center md:text-left md:pl-8">
                                     <h3 class="text-xl font-bold text-gray-800 dark:text-white">Tech Support & Customer Care</h3>
-                                    <p class="text-blue-600 dark:text-blue-400">Nobacco S.A.</p>
+                                    <a href="https://www.nobacco.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Nobacco S.A.</a>
                                     <p class="text-sm text-gray-500 dark:text-gray-400">Jan 2016 - Nov 2021</p>
                                 </div>
                                 <div class="md:w-1/2 md:pr-8 mt-4 md:mt-0">
@@ -290,7 +290,6 @@
                     <p class="max-w-2xl mx-auto mt-4 mb-12">I'm currently open to new opportunities. Feel free to reach out!</p>
                 </div>
                 <div class="max-w-2xl mx-auto">
-                    <!-- IMPORTANT: Replace YOUR_UNIQUE_ID with your own Formspree form ID -->
                     <form action="https://formspree.io/f/mwpqedpo" method="POST" class="space-y-6">
                         <div>
                             <label for="name" class="sr-only">Name</label>
@@ -343,6 +342,9 @@
             </div>
         </div>
     </footer>
+    
+    <!-- Scripts moved to the end of the body for reliable loading -->
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
 </body>
 </html>
