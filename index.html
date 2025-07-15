@@ -73,14 +73,16 @@
 
     <main>
         <!-- Hero Section -->
-        <section id="home" class="min-h-screen flex items-center bg-gray-100 dark:bg-gray-800 pt-20">
-            <div class="container mx-auto px-6 text-center">
-                <h1 class="text-5xl md:text-7xl font-black text-gray-800 dark:text-white mb-4">Dimitris Magos</h1>
-                <p class="text-2xl md:text-3xl text-blue-600 dark:text-blue-400 font-semibold mb-8">Aspiring Data Scientist</p>
-                <p class="max-w-3xl mx-auto text-lg text-gray-600 dark:text-gray-300 mb-12">
+        <section id="home" class="min-h-screen flex items-center pt-20 relative" style="background-image: url('https://www.simplilearn.com/ice9/free_resources_article_thumb/What_is_Data_Types_of_Data_and_How_To_Analyze_Data.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-black opacity-60"></div>
+            <div class="container mx-auto px-6 text-center relative z-10">
+                <h1 class="text-5xl md:text-7xl font-black text-white mb-4">Dimitris Magos</h1>
+                <p class="text-2xl md:text-3xl text-blue-300 font-semibold mb-8">Aspiring Data Scientist</p>
+                <p class="max-w-3xl mx-auto text-lg text-gray-200 mb-12">
                     Transitioning from Production Engineering to Data Science, I merge a meticulous engineering mindset with a passion for uncovering stories within data.
                 </p>
-                <a href="#contact" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition duration-300 text-lg transform hover:scale-105">Get In Touch</a>
+                <a href="#contact" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300 text-lg transform hover:scale-105">Get In Touch</a>
             </div>
         </section>
 
@@ -143,7 +145,6 @@
                                 <div class="md:w-1/2 md:pl-8 mt-4 md:mt-0">
                                     <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-sm">
                                         <ul class="list-disc list-inside space-y-1">
-                                            <li>Developed and managed MS Power BI reports.</li>
                                             <li>Automate e-signature integration into a custom CRM.</li>
                                             <li>Execute server migrations to AWS Lightsail.</li>
                                             <li>Perform server maintenance and ERP support.</li>
@@ -198,7 +199,7 @@
                              <div class="md:flex flex-row-reverse items-center">
                                 <div class="md:w-1/2 text-center md:text-left md:pl-8">
                                     <h3 class="text-xl font-bold text-gray-800 dark:text-white">Tech Support & Customer Care</h3>
-                                    <a href="https://www.nobacco.gr" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Nobacco S.A.</a>
+                                    <a href="https://www.nobacco.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Nobacco S.A.</a>
                                     <p class="text-sm text-gray-500 dark:text-gray-400">Jan 2016 - Nov 2021</p>
                                 </div>
                                 <div class="md:w-1/2 md:pr-8 mt-4 md:mt-0">
@@ -265,7 +266,6 @@
                             <li>DataCamp: Data Engineer in Python</li>
                             <li>UCERT: Project Management and Administration</li>
                             <li>Dynagie: Managing Time and Energy</li>
-                            <li>EU:Diversity and Combating Discrimination in the Workplace</li>
                         </ul>
                     </div>
                     <!-- Volunteering Card -->
@@ -277,7 +277,7 @@
                         </div>
                         <div>
                             <h4 class="font-semibold text-gray-800 dark:text-white">Languages</h4>
-                            <p class="text-sm text-gray-600 dark:text-gray-400">Greek (Native), English (Fluent), French (Basic)</p>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">English (Fluent), French (Basic)</p>
                         </div>
                     </div>
                 </div>
@@ -346,7 +346,10 @@
     </footer>
     
     <!-- Scripts moved to the end of the body for reliable loading -->
-    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script>
+        (function(d){var s = d.createElement("script");s.setAttribute("data-account", "Kzd00yQ840");s.setAttribute("src", "https://cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)
+    </script>
+    <noscript>Please enable JavaScript to view the UserWay Accessibility Widget.</noscript>
 
 </body>
 </html>
